@@ -36,6 +36,7 @@ export class EnvironmentManager {
         this.listeners.delete(callback)
     }
 
+    // TODO optimizing
     dispatchSubscribe = () => {
         this.listeners.forEach(listener => listener())
     }

@@ -32,6 +32,22 @@ envManager.add('prod', '生产',[
     }
 ])
 
+envManager.add('TAO', '淘宝',[
+    {
+        name: 'a.b.c',
+        value: 'https://taobao.com'
+    },
+    {
+        name: 'a.b.d',
+        value: 'https://taobao2.com'
+    },
+    {
+        name: 'b',
+        value: 'https://taobao3.com' 
+    }
+])
+
+
 envManager.setCurrent('default')
 
 const ArrayShowWithEvent: React.FC<any> = () => {
